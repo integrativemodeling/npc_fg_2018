@@ -1,4 +1,3 @@
-==========
  Overview
 ==========
 Synopsis: The files in this folder can be used to reproduce the Brownian Dynamics simulations of FG repeats using IMP
@@ -7,15 +6,13 @@ Author: Barak Raveh
 E-mail: barak.raveh@gmail.com or barak@salilab.org
 Date last updated: Jan 9th, 2018
 
-===============
- Main folders:
-===============
+ Main folders
+==============
 Scripts/ - scripts for generating the FG repeats over an input scaffold
 InputData/ - folder of input RMF file describing the scaffold
 Output/ - output from running the script, as explained below
 SampleOutput/ - sample of the main output from running the script
 
-===============
  Prerequisites
 ===============
 1) Download IMP (https://github.com/salilab/imp)
@@ -24,8 +21,6 @@ SampleOutput/ - sample of the main output from running the script
 
 3) Build IMP according to online instructions into folder $IMPFOLDER
 
-
-=========================================================
  Protocol for generating FG repeats from scaffold of NPC
 =========================================================
 1) Create model of NPC from RMF file of scaffold (expected running time - few minutes):
