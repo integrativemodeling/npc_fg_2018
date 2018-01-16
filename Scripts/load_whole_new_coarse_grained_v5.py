@@ -35,7 +35,6 @@ fgs_anchors_regexp['Nup100.*_551-575_']='Nup100'
 fgs_anchors_regexp['Nup116.*_751-775_']='Nup116'
 fgs_anchors_regexp['Nup145.*_201-225_']='Nup145'
 fgs_anchors_regexp['Nup159.*_1082-1116_']='Nup159'
-# TODO: adjust motif density in different nups, rg?
 fgs_nres={}
 fgs_nres['Nsp1']=600
 fgs_nres['Nup1']=700 # double check
@@ -43,17 +42,17 @@ if True or not IS_REMOVE_GLE1_AND_NUP42:
     fgs_nres['Nup42']=363
 fgs_nres['Nup49']=200
 fgs_nres['Nup57']=200
-fgs_nres['Nup60']=110 # double check
+fgs_nres['Nup60']=110 
 fgs_nres['Nup100']=550
 fgs_nres['Nup116']=750
 fgs_nres['Nup145']=200
-fgs_nres['Nup159']=600 # double check, what to do with C'?
+fgs_nres['Nup159']=600 
 
-Z_TRANSFORM=0 #-75.5
-FG_BEADS_PER_RES=20 #10
+Z_TRANSFORM=0 
+FG_BEADS_PER_RES=20 
 FG_RADIUS_PER_BEAD=6.0*(FG_BEADS_PER_RES/15.0) #6
 FG_INTERACTIONS_PER_BEAD=1
-FG_REST_LENGTH_FACTOR=1.5*math.sqrt(15.0/FG_BEADS_PER_RES) # make sure that radius*rest_length scale with sqrt(# beads)
+FG_REST_LENGTH_FACTOR=1.5*math.sqrt(15.0/FG_BEADS_PER_RES) 
 obstacles={}
 fgs={}
 TUNNEL_RADIUS=375
@@ -69,15 +68,11 @@ def get_basic_config():
     config = Configuration()
     IMP.npctransport.set_default_configuration(config)
     config.statistics_fraction.lower=1.0
-    #config.dump_interval=1
     config.interaction_k.lower=10
     config.interaction_range.lower=10
-    # create_range(config.backbone_k, .2, 1, 10
     config.backbone_k.lower=0.2
-    #config.time_step_factor.lower=0.3
     config.time_step_factor.lower=4
-    #create_range(config.rest_length_factor, .5, 1, 10)
-    config.excluded_volume_k.lower=10 # TODO: change to 10
+    config.excluded_volume_k.lower=10 
     # non-specific attraction
     config.nonspecific_range.lower= 5.0
     config.nonspecific_k.lower= 0.01
@@ -89,8 +84,6 @@ def get_basic_config():
     ###
     #simulation bounding volumes:
     config.box_is_on.lower=1
-#config.dump_interval_ns=0.01
-#config.simulation_time_ns=5
     config.dump_interval_ns=1000
     config.simulation_time_ns=1000
     config.box_is_on.lower=1
