@@ -37,7 +37,7 @@ fgs_anchors_regexp['Nup145.*_201-225_']='Nup145'
 fgs_anchors_regexp['Nup159.*_1082-1116_']='Nup159'
 fgs_nres={}
 fgs_nres['Nsp1']=600
-fgs_nres['Nup1']=700 # double check
+fgs_nres['Nup1']=700 
 if True or not IS_REMOVE_GLE1_AND_NUP42:
     fgs_nres['Nup42']=363
 fgs_nres['Nup49']=200
