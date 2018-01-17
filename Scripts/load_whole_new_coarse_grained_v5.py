@@ -37,22 +37,22 @@ fgs_anchors_regexp['Nup145.*_201-225_']='Nup145'
 fgs_anchors_regexp['Nup159.*_1082-1116_']='Nup159'
 fgs_nres={}
 fgs_nres['Nsp1']=600
-fgs_nres['Nup1']=700 
+fgs_nres['Nup1']=700
 if True or not IS_REMOVE_GLE1_AND_NUP42:
-    fgs_nres['Nup42']=363
+    fgs_nres['Nup42']=360
 fgs_nres['Nup49']=200
 fgs_nres['Nup57']=200
-fgs_nres['Nup60']=110 
-fgs_nres['Nup100']=550
-fgs_nres['Nup116']=750
+fgs_nres['Nup60']=110
+fgs_nres['Nup100']=540
+fgs_nres['Nup116']=740
 fgs_nres['Nup145']=200
-fgs_nres['Nup159']=600 
+fgs_nres['Nup159']=600
 
-Z_TRANSFORM=0 
-FG_BEADS_PER_RES=20 
+Z_TRANSFORM=0
+FG_BEADS_PER_RES=20
 FG_RADIUS_PER_BEAD=6.0*(FG_BEADS_PER_RES/15.0) #6
 FG_INTERACTIONS_PER_BEAD=1
-FG_REST_LENGTH_FACTOR=1.5*math.sqrt(15.0/FG_BEADS_PER_RES) 
+FG_REST_LENGTH_FACTOR=1.5*math.sqrt(15.0/FG_BEADS_PER_RES)
 obstacles={}
 fgs={}
 TUNNEL_RADIUS=375
@@ -72,7 +72,7 @@ def get_basic_config():
     config.interaction_range.lower=10
     config.backbone_k.lower=0.2
     config.time_step_factor.lower=4
-    config.excluded_volume_k.lower=10 
+    config.excluded_volume_k.lower=10
     # non-specific attraction
     config.nonspecific_range.lower= 5.0
     config.nonspecific_k.lower= 0.01
@@ -96,7 +96,7 @@ def get_basic_config():
 
 
 def add_fgs(config, type_name, nres, anchor_coordinates):
-    nbeads = 1 + int(math.ceil(nres / FG_BEADS_PER_RES)) # +1 for anchor
+    nbeads = 1 + int(math.ceil((nres+0.0) / FG_BEADS_PER_RES)) # +1 for anchor
     fgs= IMP.npctransport.add_fg_type(config,
                                       type_name= type_name,
                                       number_of_beads= nbeads,

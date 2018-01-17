@@ -2,7 +2,7 @@
 ==========
 Synopsis: The files in this folder can be used to reproduce the Brownian Dynamics simulations of FG repeats using IMP
           as described in Kim et al., 2018
-          
+
 Author: Barak Raveh
 
 E-mail: barak.raveh@gmail.com or barak@salilab.org
@@ -31,7 +31,7 @@ SampleOutput/ - sample of the main output from running the script
 =========================================================
 1) Create model of NPC from RMF file of scaffold (expected running time - few minutes):
 
-$ $IMPFOLDER/setup_environment.sh pyton Scripts/load_whole_new_coarse_grained_v5.py Output/config.pb InputData/wholeNPC_0.rmf3  >& Output/config.txt &
+$ $IMPFOLDER/setup_environment.sh python Scripts/load_whole_new_coarse_grained_v5.py Output/config.pb InputData/47-35_1spoke.rmf3  >& Output/config.txt &
 
 
 2) Move to Output folder:
