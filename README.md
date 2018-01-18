@@ -19,7 +19,9 @@ Output/ - output from running the script, as explained below
 
 SampleOutput/ - sample of the main output from running the script
 
-RepresentativeEnsemble/ - ensemble of output models (extracted from simulation outputs stored on Andrej's Salilab park4 file system, in folder /salilab/park4/barak/Runs/NPC_FullModel2016/FullNPC_Oct10_Cluster0model_Rg70_per_600aa_InflateObstacles_II, see .../Ensemble/make_ensemble.sh there)
+RepresentativeEnsemble/ - ensemble of output models (extracted from simulation outputs stored on Andrej's Salilab park4 file system, in folder /salilab/park4/barak/Runs/NPC_FullModel2016/FullNPC_Oct10_Cluster0model_Rg70_per_600aa_InflateObstacles_InflatedKaps, see .../Ensemble/make_ensemble.sh there)
+
+Denisites/ - densities of various nups and all nups, from same folder as RepresentativeEnsemble/
 
  Prerequisites
 ===============

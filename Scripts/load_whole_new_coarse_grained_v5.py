@@ -26,7 +26,7 @@ COARSE_GRAINED_OBSTACLES= True
 fgs_anchors_regexp={}
 fgs_anchors_regexp['Nsp1.*_601-636_']='Nsp1'
 fgs_anchors_regexp['Nup1.*_301-350_']='Nup1'
-if True or not IS_REMOVE_GLE1_AND_NUP42:
+if not IS_REMOVE_GLE1_AND_NUP42:
     fgs_anchors_regexp['Nup42.*_364-413_']='Nup42'
 fgs_anchors_regexp['Nup49.*_201-269_']='Nup49'
 fgs_anchors_regexp['Nup57.*_201-286_']='Nup57'
@@ -38,7 +38,7 @@ fgs_anchors_regexp['Nup159.*_1082-1116_']='Nup159'
 fgs_nres={}
 fgs_nres['Nsp1']=600
 fgs_nres['Nup1']=700
-if True or not IS_REMOVE_GLE1_AND_NUP42:
+if not IS_REMOVE_GLE1_AND_NUP42:
     fgs_nres['Nup42']=360
 fgs_nres['Nup49']=200
 fgs_nres['Nup57']=200
