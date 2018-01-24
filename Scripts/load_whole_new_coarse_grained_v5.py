@@ -217,7 +217,7 @@ IMP.rmf.load_frame(f,0)
 for nup in h[0].get_children():
     nup_name=nup.get_name()
     is_single_spoke= not re.search("@", nup_name) or re.search("@11$", nup_name)
-    is_gle1_or_nup42= re.match("Gle1", nup_name) or (False and re.match("Nup42", nup_name))
+    is_gle1_or_nup42= re.match("Gle1", nup_name) or re.match("Nup42", nup_name)
     if is_single_spoke and not (is_gle1_or_nup42 and IS_REMOVE_GLE1_AND_NUP42):
         for r in nup.get_children():
             handle_representation(config, r)
