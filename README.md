@@ -33,12 +33,14 @@ Denisites/ - densities of various nups and all nups, from same folder as Represe
 
  Protocol for generating FG repeats from scaffold of NPC
 =========================================================
-1) Create model of NPC from RMF file of scaffold (expected running time - few minutes):
+0) Create folder for output, e.g. "Output"
+
+1) Create model of NPC from RMF file of scaffold (expected running time - few minutes) in output folder ("Output" in this example):
 
 $ $IMPFOLDER/setup_environment.sh python Scripts/load_whole_new_coarse_grained_v5.py Output/config.pb InputData/47-35_1spoke.rmf3  >& Output/config.txt &
 
 
-2) Move to Output folder:
+2) move to Output folder:
 
 $ cd Output
 

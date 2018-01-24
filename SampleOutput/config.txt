@@ -114,7 +114,6 @@ Beads Nup100.1 ; Beads
 Res:1 Nup100.1 ; Nup100.1_Res:1
 Beads Nup100.2 ; Beads
 Res:1 Nup100.2 ; Nup100.2_Res:1
-Beads Nup42 ; Beads
 Beads Nup145.1 ; Beads
 Res:1 Nup145.1 ; Nup145.1_Res:1
 Beads Nup145.2 ; Beads
@@ -850,73 +849,6 @@ fgs {
     z: 140.661816854
   }
   type: "Nup116"
-}
-fgs {
-  number_of_beads {
-    lower: 19
-  }
-  number {
-    lower: 8
-  }
-  radius {
-    lower: 8.0
-  }
-  interactions {
-    lower: 1
-  }
-  rest_length_factor {
-    lower: 1.29903810568
-  }
-  d_factor {
-    lower: 1
-  }
-  interaction_k_factor {
-    lower: 1
-  }
-  interaction_range_factor {
-    lower: 1
-  }
-  anchor_coordinates {
-    x: 165.741190787
-    y: -2.74997005441
-    z: 218.548062073
-  }
-  anchor_coordinates {
-    x: 119.141242401
-    y: 115.252197454
-    z: 218.548062073
-  }
-  anchor_coordinates {
-    x: 2.74997005441
-    y: 165.741190787
-    z: 218.548062073
-  }
-  anchor_coordinates {
-    x: -115.252197454
-    y: 119.141242401
-    z: 218.548062073
-  }
-  anchor_coordinates {
-    x: -165.741190787
-    y: 2.74997005441
-    z: 218.548062073
-  }
-  anchor_coordinates {
-    x: -119.141242401
-    y: -115.252197454
-    z: 218.548062073
-  }
-  anchor_coordinates {
-    x: -2.74997005441
-    y: -165.741190787
-    z: 218.548062073
-  }
-  anchor_coordinates {
-    x: 115.252197454
-    y: -119.141242401
-    z: 218.548062073
-  }
-  type: "Nup42"
 }
 fgs {
   number_of_beads {
@@ -1869,19 +1801,6 @@ interactions {
 }
 interactions {
   type0: "Nup100"
-  type1: "Nup42"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup100"
   type1: "Nup145"
   is_on {
     lower: 1
@@ -1999,19 +1918,6 @@ interactions {
 }
 interactions {
   type0: "Nup57"
-  type1: "Nup42"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup57"
   type1: "Nup145"
   is_on {
     lower: 1
@@ -2129,19 +2035,6 @@ interactions {
 }
 interactions {
   type0: "Nup49"
-  type1: "Nup42"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup49"
   type1: "Nup145"
   is_on {
     lower: 1
@@ -2259,19 +2152,6 @@ interactions {
 }
 interactions {
   type0: "Nup60"
-  type1: "Nup42"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup60"
   type1: "Nup145"
   is_on {
     lower: 1
@@ -2389,19 +2269,6 @@ interactions {
 }
 interactions {
   type0: "Nup116"
-  type1: "Nup42"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup116"
   type1: "Nup145"
   is_on {
     lower: 1
@@ -2453,136 +2320,6 @@ interactions {
   }
 }
 interactions {
-  type0: "Nup42"
-  type1: "Nup100"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "Nup57"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "Nup49"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "Nup60"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "Nup116"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "Nup42"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "Nup145"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "Nup1"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "Nsp1"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "Nup159"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
   type0: "Nup145"
   type1: "Nup100"
   is_on {
@@ -2637,19 +2374,6 @@ interactions {
 interactions {
   type0: "Nup145"
   type1: "Nup116"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup145"
-  type1: "Nup42"
   is_on {
     lower: 1
   }
@@ -2779,19 +2503,6 @@ interactions {
 }
 interactions {
   type0: "Nup1"
-  type1: "Nup42"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup1"
   type1: "Nup145"
   is_on {
     lower: 1
@@ -2909,19 +2620,6 @@ interactions {
 }
 interactions {
   type0: "Nsp1"
-  type1: "Nup42"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nsp1"
   type1: "Nup145"
   is_on {
     lower: 1
@@ -3027,19 +2725,6 @@ interactions {
 interactions {
   type0: "Nup159"
   type1: "Nup116"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 0.01
-  }
-  interaction_range {
-    lower: 6
-  }
-}
-interactions {
-  type0: "Nup159"
-  type1: "Nup42"
   is_on {
     lower: 1
   }
@@ -3215,32 +2900,6 @@ interactions {
 }
 interactions {
   type0: "Nup116"
-  type1: "kap14"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 4.75
-  }
-  interaction_range {
-    lower: 4.5
-  }
-  range_sigma0_deg {
-    lower: 45
-  }
-  range_sigma1_deg {
-    lower: 45
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "R14"
-  is_on {
-    lower: 1
-  }
-}
-interactions {
-  type0: "Nup42"
   type1: "kap14"
   is_on {
     lower: 1
@@ -3475,32 +3134,6 @@ interactions {
 }
 interactions {
   type0: "Nup116"
-  type1: "kap16"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 4.75
-  }
-  interaction_range {
-    lower: 4.5
-  }
-  range_sigma0_deg {
-    lower: 45
-  }
-  range_sigma1_deg {
-    lower: 45
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "R16"
-  is_on {
-    lower: 1
-  }
-}
-interactions {
-  type0: "Nup42"
   type1: "kap16"
   is_on {
     lower: 1
@@ -3735,32 +3368,6 @@ interactions {
 }
 interactions {
   type0: "Nup116"
-  type1: "kap18"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 4.75
-  }
-  interaction_range {
-    lower: 4.5
-  }
-  range_sigma0_deg {
-    lower: 45
-  }
-  range_sigma1_deg {
-    lower: 45
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "R18"
-  is_on {
-    lower: 1
-  }
-}
-interactions {
-  type0: "Nup42"
   type1: "kap18"
   is_on {
     lower: 1
@@ -3995,32 +3602,6 @@ interactions {
 }
 interactions {
   type0: "Nup116"
-  type1: "kap20"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 4.75
-  }
-  interaction_range {
-    lower: 4.5
-  }
-  range_sigma0_deg {
-    lower: 45
-  }
-  range_sigma1_deg {
-    lower: 45
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "R20"
-  is_on {
-    lower: 1
-  }
-}
-interactions {
-  type0: "Nup42"
   type1: "kap20"
   is_on {
     lower: 1
@@ -4255,32 +3836,6 @@ interactions {
 }
 interactions {
   type0: "Nup116"
-  type1: "kap22"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 4.75
-  }
-  interaction_range {
-    lower: 4.5
-  }
-  range_sigma0_deg {
-    lower: 45
-  }
-  range_sigma1_deg {
-    lower: 45
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "R22"
-  is_on {
-    lower: 1
-  }
-}
-interactions {
-  type0: "Nup42"
   type1: "kap22"
   is_on {
     lower: 1
@@ -4515,32 +4070,6 @@ interactions {
 }
 interactions {
   type0: "Nup116"
-  type1: "kap24"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 4.75
-  }
-  interaction_range {
-    lower: 4.5
-  }
-  range_sigma0_deg {
-    lower: 45
-  }
-  range_sigma1_deg {
-    lower: 45
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "R24"
-  is_on {
-    lower: 1
-  }
-}
-interactions {
-  type0: "Nup42"
   type1: "kap24"
   is_on {
     lower: 1
@@ -4775,32 +4304,6 @@ interactions {
 }
 interactions {
   type0: "Nup116"
-  type1: "kap26"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 4.75
-  }
-  interaction_range {
-    lower: 4.5
-  }
-  range_sigma0_deg {
-    lower: 45
-  }
-  range_sigma1_deg {
-    lower: 45
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "R26"
-  is_on {
-    lower: 1
-  }
-}
-interactions {
-  type0: "Nup42"
   type1: "kap26"
   is_on {
     lower: 1
@@ -5035,32 +4538,6 @@ interactions {
 }
 interactions {
   type0: "Nup116"
-  type1: "kap28"
-  is_on {
-    lower: 1
-  }
-  interaction_k {
-    lower: 4.75
-  }
-  interaction_range {
-    lower: 4.5
-  }
-  range_sigma0_deg {
-    lower: 45
-  }
-  range_sigma1_deg {
-    lower: 45
-  }
-}
-interactions {
-  type0: "Nup42"
-  type1: "R28"
-  is_on {
-    lower: 1
-  }
-}
-interactions {
-  type0: "Nup42"
   type1: "kap28"
   is_on {
     lower: 1
@@ -121626,46 +121103,6 @@ obstacles {
     x: 509.441966018
     y: -16.7774474041
     z: 152.004765005
-  }
-  xyzs {
-    x: -11.4786334025
-    y: -156.121839905
-    z: 201.92472515
-  }
-  xyzs {
-    x: -156.121839905
-    y: 11.4786334025
-    z: 201.92472515
-  }
-  xyzs {
-    x: 11.4786334025
-    y: 156.121839905
-    z: 201.92472515
-  }
-  xyzs {
-    x: 102.278192171
-    y: -118.511431206
-    z: 201.92472515
-  }
-  xyzs {
-    x: 118.511431206
-    y: 102.278192171
-    z: 201.92472515
-  }
-  xyzs {
-    x: 156.121839905
-    y: -11.4786334025
-    z: 201.92472515
-  }
-  xyzs {
-    x: -102.278192171
-    y: 118.511431206
-    z: 201.92472515
-  }
-  xyzs {
-    x: -118.511431206
-    y: -102.278192171
-    z: 201.92472515
   }
   xyzs {
     x: 378.029548117
