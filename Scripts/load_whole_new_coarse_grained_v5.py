@@ -168,10 +168,10 @@ def handle_xyz_children(config, parent):
 def handle_representation(config, r):
 #    print r.get_name()
     if r.get_name()=="Beads":
-        print "Beads", r.get_parent().get_name(), ";", r.get_name()
+#        print "Beads", r.get_parent().get_name(), ";", r.get_name()
         handle_xyz_children(config,r)
     if re.search("Res:1$", r.get_name()): # what to do abuut res10 vs res1?
-        print "Res:1", r.get_parent().get_name(), ";", r.get_name()
+#        print "Res:1", r.get_parent().get_name(), ";", r.get_name()
         for rr in r.get_children():
             handle_xyz_children(config, rr)
 
