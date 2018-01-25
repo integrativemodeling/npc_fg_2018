@@ -1,0 +1,49 @@
+Random seed is 1762631686
+get_time_step():  max_d_factor 1 max-k 10.6875 min-range 4.5 max-trans-relative-to-R 0.05 time-step-factor 4
+dT = 1047.74 [fs]
+dump interval = 954438 frames, 1000 ns, time step 1047.74
+stats interval = 9545 frames, converted from 10 ns, time step 1047.74
+output stats interval = 95444 frames, converted from 100 ns, time step 1047.74
+Creating a close pair container for 29456 non-optimizable beads and 7320 optimizable ones
+"R28"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"kap26"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"R26"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"kap24"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"R24"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"kap22"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"R22"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"kap20"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"R20"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"kap18"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"R18"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"kap16"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"R16"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"kap28"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"kap14"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]"R14"
+["R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", "R28", ,...]Simulation trial 0 out of 1
+Doing initial coordinates optimization...
+Creating a close pair container for 29272 non-optimizable beads and 480 optimizable ones
+Creating a close pair container for 29320 non-optimizable beads and 1920 optimizable ones
+Creating a close pair container for 29328 non-optimizable beads and 2200 optimizable ones
+Creating a close pair container for 29344 non-optimizable beads and 2360 optimizable ones
+Creating a close pair container for 29360 non-optimizable beads and 2952 optimizable ones
+Creating a close pair container for 29376 non-optimizable beads and 3048 optimizable ones
+Creating a close pair container for 29408 non-optimizable beads and 3368 optimizable ones
+Creating a close pair container for 29440 non-optimizable beads and 3688 optimizable ones
+Creating a close pair container for 29456 non-optimizable beads and 4120 optimizable ones
+Creating a close pair container for 29456 non-optimizable beads and 7320 optimizable ones
+Score right before BD = 280169 ; PredicatePairsRestraint score = 0
+Equilibrating for 0 frames...
+Optimizing for 0 frames in this iteration
+Score = 280169 ; PredicatePairsRestraint score = 0
+Done
+Equilibration finished succesfully
+Running for 10 frames...
+Optimizing for 10 frames in this iteration
+Score = 277845 ; PredicatePairsRestraint score = 0
+Done
+Run trial #0 finished succesfully
+Printing last frame to final_conformations.rmf
+Entire run finished
+Final score = 277845 ; PredicatePairsRestraint score = 0
