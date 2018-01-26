@@ -198,7 +198,7 @@ def parse_args():
     if len(sys.argv) != 5:
         print("Usage: %s path-to-8spoke.cif fg-model-num ref-rmf-name "
               "dcd-fname\n\n" % sys.argv[0], file=sys.stderr)
-        # e.g. ./to_dcd.py ../../../results/pdb-dev/npc-8spoke.cif 2 modelN11_101.rmf fg_repeat_ensemble.dcd
+        # e.g. ./to_dcd.py ../../../results/pdb-dev/npc-8spoke.cif 2 modelN11_101.rmf ../RepresentativeEnsemble/fg_repeat_ensemble.dcd
         sys.exit(1)
     return sys.argv[1:]
 
