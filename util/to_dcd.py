@@ -157,7 +157,7 @@ class CifParser(object):
             if line.startswith('_'): continue
             if line.startswith('#'):
                 return coords, comps
-            if line.endswith(' 2\n'):
+            if line.endswith(line_end):
                 sphere_obj = line.split()
                 asym_id = sphere_obj[4]
                 comp = comp_from_asym[asym_id]
