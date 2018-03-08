@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1194533.svg)](https://doi.org/10.5281/zenodo.1194533)
+
  Overview
 ==========
 Synopsis: The files in this folder can be used to reproduce the Brownian Dynamics simulations of FG repeats using IMP
