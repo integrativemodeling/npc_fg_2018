@@ -53,3 +53,18 @@ $ $IMPFOLDER/setup_environment.sh $IMPFOLDER/module_bin/npctransport/fg_simulati
 
 
 4) The output movie file movie.rmf can be viewed using e.g. Chimera.
+
+## Information
+
+_Author(s)_: Barak Raveh
+
+_Date_: March 8th, 2018
+
+_License_: [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
+This work is freely available under the terms of the Creative Commons
+Attribution-ShareAlike 4.0 International License.
+
+_Last known good IMP version_: [![build info](https://integrativemodeling.org/systems/?sysstat=29&branch=master)](https://integrativemodeling.org/systems/) [![build info](https://integrativemodeling.org/systems/?sysstat=29&branch=develop)](https://integrativemodeling.org/systems/)
+
+_Publications_:
+- Seung Joong Kim\*, Javier Fernandez-Martines\*, Ilona Nudelman\*, Yi Shi\*, Wenzhu Zhang\*, et al., [Integrative structure and Functional Anatomy of a Nuclear Pore Complex](http://www.nature.com/nature/journal/), Nature , 2018, in press.
