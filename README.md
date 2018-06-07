@@ -30,7 +30,8 @@ Prerequisites
 1) Download IMP (https://github.com/salilab/imp) - a recent nightly (or develop)
 build is needed
 
-2) Build IMP according to online instructions into folder `$IMPFOLDER`
+2) Build IMP according to online instructions into folder `$IMPFOLDER` including
+the IMP.npctransport module (this requires [Protobuf](https://github.com/google/protobuf))
 
 Protocol for generating FG repeats from scaffold of NPC
 =======================================================
