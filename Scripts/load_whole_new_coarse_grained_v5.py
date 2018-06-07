@@ -1,4 +1,4 @@
-#!/usr/bin/bash $IMPFOLDER/setup_environment.sh /usr/bin/python
+#!/bin/env python
 
 #########################################
 # Example: $IMPFOLDER/setup_environment.sh python Scripts/load_whole.py \
