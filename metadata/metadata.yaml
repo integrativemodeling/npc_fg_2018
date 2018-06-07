@@ -1,5 +1,6 @@
 title: Brownian Dynamics simulations of yeast NPC FG repeats
 tags: [Brownian dynamics]
+pmid: 29539637
 prereqs: []
 test:
     runtime: 24h
