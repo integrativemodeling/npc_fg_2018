@@ -30,7 +30,7 @@ Prerequisites
 1) Download IMP (https://github.com/salilab/imp) - a recent nightly (or develop)
 build is needed
 
-2) Build IMP according to online instructions into folder `$IMPFOLDER` including
+2) Build IMP according to online instructions, including
 the IMP.npctransport module (this requires [Protobuf](https://github.com/google/protobuf))
 
 Protocol for generating FG repeats from scaffold of NPC
@@ -39,7 +39,7 @@ Protocol for generating FG repeats from scaffold of NPC
 
 1) Create model of NPC from RMF file of scaffold (expected running time - a few minutes) in output folder ("`Output`" in this example):
 
-    `$ $IMPFOLDER/setup_environment.sh python Scripts/load_whole_new_coarse_grained_v5.py Output/config.pb InputData/47-35_1spoke.rmf3  >& Output/config.txt &`
+    `$ Scripts/load_whole_new_coarse_grained_v5.py Output/config.pb InputData/47-35_1spoke.rmf3  >& Output/config.txt &`
 
 
 2) move to `Output` folder:
@@ -49,7 +49,7 @@ Protocol for generating FG repeats from scaffold of NPC
 
 3) Equilibrate and run for as long as desired by changing `short_init_factor` and `short_sim_factor` for shorter or longer equilibration and simulation, respectively, and using a specific random seed using optional `--random_seed` flag; output file and movie file names could be changed as well, use `--help` option for more information (expected running time - hours to days depending on simulation time and system):
 
-    `$ $IMPFOLDER/setup_environment.sh $IMPFOLDER/module_bin/npctransport/fg_simulation --configuration config.pb  --output output.pb --short_init_factor 0.25 --short_sim_factor 1.0 --conformations movie.rmf --random_seed $RANDOM >& LOG.fg_simulation &`
+    `$ fg_simulation --configuration config.pb  --output output.pb --short_init_factor 0.25 --short_sim_factor 1.0 --conformations movie.rmf --random_seed $RANDOM >& LOG.fg_simulation &`
 
 
 4) The output movie file `movie.rmf` can be viewed using e.g. Chimera.
