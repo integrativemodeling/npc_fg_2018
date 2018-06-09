@@ -2,7 +2,7 @@ title: Brownian Dynamics simulations of yeast NPC FG repeats
 tags: [Brownian dynamics]
 pmid: 29539637
 accessions: [PDBDEV_00000012]
-prereqs: []
+prereqs: [python/protobuf]
 test:
     runtime: 24h
     build: release
