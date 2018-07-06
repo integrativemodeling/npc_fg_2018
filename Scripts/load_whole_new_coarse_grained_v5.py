@@ -8,6 +8,7 @@
 # Data written: Aug 16, 2016
 # Date last udpated: Jan 9, 2018 or later
 #########################################
+from __future__ import print_function
 from IMP.npctransport import *
 import IMP.atom
 import IMP.core
@@ -149,7 +150,7 @@ def handle_xyz_children(config, parent):
                 continue
 #            print i, coords_i, radius, distance,
             is_anchor=False
-            for anchor_name,fg_name in fgs_anchors_regexp.iteritems():
+            for anchor_name,fg_name in fgs_anchors_regexp.items():
                 if re.search(anchor_name,p.get_name()):
 #                    print "FG-Anchor_"+fgs_anchors_regexp[anchor_name]
                     is_anchor=True
@@ -178,7 +179,7 @@ def handle_representation(config, r):
 def get_coarse_grained_obstacles(obstacles):
   # bin obstacles by distance from central axis
   in_obstacles={}
-  for (radius, coords) in obstacles.iteritems():
+  for (radius, coords) in obstacles.items():
     for coord in coords:
       s=IMP.algebra.Sphere3D(coord,radius)
       dXY=math.sqrt(coord[0]**2+coord[1]**2)
@@ -189,7 +190,7 @@ def get_coarse_grained_obstacles(obstacles):
           in_obstacles[dXY]=[s]
   # coarse-grain each bin using an increasing resolution from center outward
   intermediate_obstacles=[]
-  for dXY,spheres in in_obstacles.iteritems():
+  for dXY,spheres in in_obstacles.items():
     resolution=min(20,  (dXY/110.0)**1.35)
     intermediate_obstacles=intermediate_obstacles+ \
         IMP.algebra.get_simplified_from_volume(spheres, resolution)
@@ -224,16 +225,16 @@ for nup in h[0].get_children():
 # Add particles to configuration file
 if(COARSE_GRAINED_OBSTACLES):
     obstacles=get_coarse_grained_obstacles(obstacles)
-for (radius, coords) in obstacles.iteritems():
+for (radius, coords) in obstacles.items():
     add_obstacles(config,
         "obstacles %.1f" % radius,
         coords,
         radius*OBSTACLE_SCALE_FACTOR) # inflate obstacles a bit to prevent artificial holes
-for (name,coords) in fgs.iteritems():
+for (name,coords) in fgs.items():
     add_fgs(config, name, fgs_nres[name], coords)
 # Add fg-fg interactions:
-for name0 in fgs.iterkeys():
-    for name1 in fgs.iterkeys():
+for name0 in fgs.keys():
+    for name1 in fgs.keys():
         interactionFG_FG= IMP.npctransport.add_interaction(config,
                                                            name0= name0,
                                                            name1= name1,
@@ -256,7 +257,7 @@ for radius in rrange:
                                              radius=radius,
                                              type_name=kap_name,
                                              interactions=kap_interaction_sites)
-    for fg_name in fgs.iterkeys():
+    for fg_name in fgs.keys():
         IMP.npctransport.add_interaction(config,
                                          name0=fg_name,
                                          name1=inert_name,
@@ -275,4 +276,4 @@ for radius in rrange:
 # dump to file
 f=open(outfile, "wb")
 f.write(config.SerializeToString())
-print config
+print(config)
